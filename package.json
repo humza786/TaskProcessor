@@ -1,0 +1,20 @@
+{
+  "name": "distributed-task-processing",
+  "version": "1.0.0",
+  "description": "Distributed task processing setup using RabbitMQ for message queuing and Redis for caching.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/supervisor.js",
+    "worker1": "node src/worker.js 1",
+    "worker2": "node src/worker.js 2",
+    "producer": "node src/producer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "redis": "^4.6.13"
+  }
+}
